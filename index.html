@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI CALCULATION</title>
+    <style>
+        header, h1{
+            color: teal;
+            text-align: center;
+        }
+        /* header, h2{
+            color: darkcyan;
+            text-align: center;
+        } */
+        .input_field{
+            text-align: center;
+        }
+        .compute_btn{
+            padding: 5px 20px;
+            border-radius: 5px;
+            background-color: tomato;
+            color: white;
+            font-weight: 700;
+            border: 0;
+        }
+        .compute_btn:hover{
+            background-color: blue;
+        }
+
+        .feet_field{
+            margin-right: 5px;
+            text-align: center;
+            font-weight: 700;
+           
+        }
+        #inch_field{
+            text-align: center; 
+            font-weight: 700;
+            
+        }
+        #kg_field{
+            text-align: center;
+            font-weight: 700;
+        }
+        .bmi_result{
+            padding: 5px 0px;
+            background-color: skyblue;
+            border-radius: 5px;
+            border: 0;
+            color: black;
+            font-weight: 900;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            
+        }
+        #status_field{
+            padding: 5px 25px;
+            background-color: rgb(40, 78, 94);
+            border-radius: 5px;
+            border: 0;
+            color: white;
+            font-weight: 500;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+
+        }
+        #clear_btn{
+            background-color: chocolate;
+            border: 0;
+            padding: 4px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 500;
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        #clear_btn:hover{
+            background-color: blue;
+        }
+        /* .bmi_categories{
+            border-radius: 5px;
+            border: 2px solid rgb(54, 52, 51);
+            width: 70%;
+            margin-left: 20px;
+            margin: 0 auto;
+            
+        } */
+        /* .bmi_categories p{
+            color: crimson;
+            padding-left: 5px;
+
+        } */
+        /* .main{
+            display: flex;
+            justify-content: center;
+           justify-content: space-around; 
+           justify-content: space-evenly;
+        }
+       */
+    </style>
+</head>
+<body>
+   <header>
+    <h1> BMI CALCULATION</h1>
+    <br>
+   </header>
+   <main class="main"> 
+    <section class="input_field">
+        <div>
+            <input id="feet_field" class="feet_field" type="text" placeholder=" Height in Feet ">
+            <input id="inch_field" type="text" placeholder=" Height in Inch">
+        </div>
+        <div>
+            <br>
+            <input id="kg_field" type="text" placeholder=" Weight in Kg" >
+        </div>
+        <br>
+       <div>
+        <input id="result_field" class="bmi_result" type="text" placeholder="Your BMI Result">
+        
+       </div>
+       <br>
+       <div>
+        <input id="status_field"  type="text" placeholder=" Your BMI Status">
+       </div>
+       <br>
+        <button id="btn_click" class="compute_btn">Compute</button>
+        <button id="clear_btn">Clear</button>
+    </section>
+<!-- 
+    <section>
+        <div>
+            <div class="bmi_categories">
+                <header>
+                    <h2>BMI Categories</h2>
+                    <hr>
+                </header>
+               <p> Underweight   <18.5 </p> 
+               <p> Noraml Weight  = 18.5 - 24.9 </p> 
+               <p> Over Weight  = 25 - 29.9 </p> 
+               <p> Obesity  = 30 - 34.9 (Class-1)</p> 
+               <p> Obesity  = 35 - 39.9 (Class-2)</p> 
+               <p> Extreme Obesity  > 40 </p> 
+            </div>
+        </div>
+    </section> -->
+
+   </main>
+   <script src="BMI.js"></script>
+</body>
+</html>
