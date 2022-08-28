@@ -1,25 +1,25 @@
 @media only screen and (max-width: 576px) {
 
 .feet_field{
-    padding: 5px 0px;
+    padding: 10px 0px;
     margin-top: 5px;
    
 }
 #inch_field{
-    padding: 5px 0px; 
+    padding: 10px 0px; 
     margin-top: 5px; 
 }
 #kg_field{
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
 #status_field{
-    padding: 5px 20px;
+    padding: 5px 15px;
 
 }
 .compute_btn{
     padding: 8px 20px;
 }
 #clear_btn{
-    padding: 8px 20px;
+    padding: 6px 15px;
 }
 }
