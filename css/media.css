@@ -3,7 +3,7 @@
 .feet_field{
     padding: 10px 0px;
     margin-top: 5px;
-    margin-left: 5px;
+    
    
 }
 #inch_field{
@@ -18,7 +18,7 @@
     
 }
 #status_field{
-    padding: 5px 15px;
+    padding: 10px 20px;
 
 }
 .compute_btn{
