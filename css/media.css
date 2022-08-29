@@ -1,5 +1,7 @@
 @media only screen and (max-width: 576px) {
-
+    header, h1{
+        padding-bottom: 0px;
+    }
 .feet_field{
     padding: 10px 0px;
     margin-top: 5px;
