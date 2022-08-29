@@ -74,12 +74,71 @@ document.getElementById('btn_click').addEventListener('click', function(){
     
         }
         else{
-            return "Extreme Obesity "
+            return "Extreme Obesity"
         }
               
     }
     const resultFinal = bmiStatus(reultField.value);
     statusField.value = resultFinal;
+
+
+    // function for medical advice************
+
+
+    const adviceField = document.getElementById('advice_field');
+    const adviceFieldValue = adviceField.value;
+    const adviceFieldValueToString = toString(adviceFieldValue);
+
+    function medicalAdvice(result){
+        if( result == "Underweight"){
+            return "Eat five to six smaller meals during the day rather than two or three large meals.Choose nutrient-rich foods. As part of an overall healthy diet, choose whole-grain breads, pastas and cereals; fruits and vegetables; dairy products; lean protein sources; and nuts and seeds."
+           
+        }
+        else if(result == "Over Weight"){
+            return `
+            "Healthy eating plan and regular physical activity."
+            Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
+            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
+            Making healthier choices. ...
+            Restricting certain foods. ...
+            Meal replacements`
+        }
+        else if(result == "Obesity class-I"){
+            return `Healthy eating plan and regular physical activity.
+Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
+            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
+            Making healthier choices. ...
+            Restricting certain foods. ...
+            Meal replacements`
+
+        }
+        else if(result == "Obesity class-II"){
+            return `Healthy eating plan and regular physical activity.
+Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
+            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
+            Making healthier choices. ...
+            Restricting certain foods. ...
+            Meal replacements`
+
+        }
+        else if(result == "Extreme Obesity"){
+            return `Healthy eating plan and regular physical activity.
+Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
+            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
+            Making healthier choices. ...
+            Restricting certain foods. ...
+            Meal replacements`
+
+        }
+        else{
+            return "Good Health";
+        }
+
+    }
+    const adviceResult = medicalAdvice(statusField.value);
+    adviceField.value = adviceResult;
+    
+    // "Healthy eating plan and regular physical activity."
          
 })
 
@@ -114,6 +173,11 @@ document.getElementById('clear_btn').addEventListener('click', function(){
     const statusFieldValue = statusField.value;
     const statusFieldValueToString = toString(statusFieldValue);
     statusField.value = "";
+    
+    const adviceField = document.getElementById('advice_field');
+    const adviceFieldValue = adviceField.value;
+    const adviceFieldValueToString = toString(adviceFieldValue);
+    adviceField.value = "";
     
 })
 
