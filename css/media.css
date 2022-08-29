@@ -14,5 +14,12 @@
     padding: 10px 0px;
 }
 
+#advice_field{            
+    padding-left: 5px;
+    padding-right: 5px;    
+}
+.break{
+    white-space: none;
+}
 
 }
