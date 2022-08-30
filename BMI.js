@@ -1,13 +1,7 @@
 document.getElementById('btn_click').addEventListener('click', function(){
     
-    // function feetToInch(feet){
-    //     const inchValue = feet * 12 ;
-    //     return inchValue
-    // }
-    // const feetReult = feetToInch();
+
     
-
-
     const feetInput = document.getElementById('feet_field');
     const feetValue = feetInput.value;
     const feetValueString = parseFloat(feetValue);
@@ -47,9 +41,9 @@ document.getElementById('btn_click').addEventListener('click', function(){
     // status of BMI
     const statusField = document.getElementById('status_field');
     const statusFieldValue = statusField.value;
-    // statusField.value = resultFinal;
     const statusFieldValueToString = toString(statusFieldValue);
-    
+
+
 
 // function********************************
 
@@ -81,17 +75,24 @@ document.getElementById('btn_click').addEventListener('click', function(){
     const resultFinal = bmiStatus(reultField.value);
     statusField.value = resultFinal;
 
+})
 
-    // function for medical advice************
 
+    
+//    advice btn click*************
 
+document.getElementById('advice_btn').addEventListener('click', function(){
     const adviceField = document.getElementById('advice_field');
-    const adviceFieldValue = adviceField.value;
-    const adviceFieldValueToString = toString(adviceFieldValue);
-
+    const adviceValue = adviceField.value;
+    
     function medicalAdvice(result){
         if( result == "Underweight"){
-            return "Eat five to six smaller meals during the day rather than two or three large meals.Choose nutrient-rich foods. As part of an overall healthy diet, choose whole-grain breads, pastas and cereals; fruits and vegetables; dairy products; lean protein sources; and nuts and seeds."
+            return `How to put on weight safely:
+
+>Eating at least 5 portions of a variety of fruit and vegetables every day.
+>Basing meals on potatoes, bread, rice, pasta or other starchy carbohydrates.
+>Having some dairy or dairy alternatives (such as soya drinks and yoghurts).
+>Eating some beans, pulses, fish, eggs, meat and other protein.`
            
         }
         else if(result == "Over Weight"){
@@ -104,12 +105,7 @@ document.getElementById('btn_click').addEventListener('click', function(){
             Meal replacements`
         }
         else if(result == "Obesity class-I"){
-            return `Healthy eating plan and regular physical activity.
-Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
-            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
-            Making healthier choices. ...
-            Restricting certain foods. ...
-            Meal replacements`
+            return `Choose minimally processed, whole foods-whole grains, vegetables, fruits, nuts, healthful sources of protein (fish, poultry, beans), and plant oils. Limit sugared beverages, refined grains, potatoes, red and processed meats, and other highly processed foods, such as fast food.`
 
         }
         else if(result == "Obesity class-II"){
@@ -131,16 +127,23 @@ Dietary changes: Cutting calories. The key to weight loss is reducing how many c
 
         }
         else{
-            return "Good Health";
+            return `Good Health`;
         }
 
     }
+
+    const statusField = document.getElementById('status_field');
+    const statusFieldValue = statusField.value; 
+
+
     const adviceResult = medicalAdvice(statusField.value);
     adviceField.value = adviceResult;
-    
-    // "Healthy eating plan and regular physical activity."
-         
+
+
+    // adviceField.value = "";
 })
+
+
 
 // clear all*****************
 document.getElementById('clear_btn').addEventListener('click', function(){
@@ -175,8 +178,8 @@ document.getElementById('clear_btn').addEventListener('click', function(){
     statusField.value = "";
     
     const adviceField = document.getElementById('advice_field');
-    const adviceFieldValue = adviceField.value;
-    const adviceFieldValueToString = toString(adviceFieldValue);
+    const adviceValue = adviceField.value;
+    const adviceValueString = parseFloat(adviceValue);
     adviceField.value = "";
     
 })
