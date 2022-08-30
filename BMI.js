@@ -89,32 +89,40 @@ document.getElementById('advice_btn').addEventListener('click', function(){
         if( result == "Underweight"){
             return `How to put on weight safely:
 
->Eating at least 5 portions of a variety of fruit and vegetables every day.
->Basing meals on potatoes, bread, rice, pasta or other starchy carbohydrates.
->Having some dairy or dairy alternatives (such as soya drinks and yoghurts).
->Eating some beans, pulses, fish, eggs, meat and other protein.`
+--Eating at least 5 portions of a variety of fruit and vegetables every day.
+
+--Basing meals on potatoes, bread, rice, pasta or other starchy carbohydrates.
+
+--Having some dairy or dairy alternatives (such as soya drinks and yoghurts).
+
+--Eating some beans, pulses, fish, eggs, meat and other protein.`
            
         }
         else if(result == "Over Weight"){
             return `
             "Healthy eating plan and regular physical activity."
-            Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
-            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
-            Making healthier choices. ...
-            Restricting certain foods. ...
-            Meal replacements`
+            
+Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you tain. 
+Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — containlot of calories for a small portion. 
+Making healthier choices.
+Restricting certain foods. 
+Meal replacements`
+
         }
         else if(result == "Obesity class-I"){
-            return `Choose minimally processed, whole foods-whole grains, vegetables, fruits, nuts, healthful sources of protein (fish, poultry, beans), and plant oils. Limit sugared beverages, refined grains, potatoes, red and processed meats, and other highly processed foods, such as fast food.`
+            return `Healthy eating plan:
+            
+Choose minimally processed, whole foods-whole grains, vegetables, fruits, nuts, healthful sourcof protein (fish, poultry, beans), and plant oils. Limit sugared beverages, refined grainpotatoes, red and processed meats, and other highly processed foods, such as fast food.`
 
         }
         else if(result == "Obesity class-II"){
             return `Healthy eating plan and regular physical activity.
-Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
-            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
-            Making healthier choices. ...
-            Restricting certain foods. ...
-            Meal replacements`
+
+Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in.
+Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion.
+Making healthier choices. 
+Restricting certain foods.
+Meal replacements`
 
         }
         else if(result == "Extreme Obesity"){
@@ -127,7 +135,20 @@ Dietary changes: Cutting calories. The key to weight loss is reducing how many c
 
         }
         else{
-            return `Good Health`;
+            return `You can maintain Normal Weight with following some diets:
+
+.Emphasizes fruits
+.vegetables
+.whole grains  
+.fat-free or low-fat milk and milk products. 
+
+--Includes a variety of protein foods such as 
+.seafood
+.lean meats and poultry
+. eggs
+.legumes (beans and peas)
+.soy products, nuts, and seeds.
+.low in added sugars, sodium, saturated fats, trans fats, and cholesterol.`
         }
 
     }
