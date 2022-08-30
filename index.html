@@ -10,7 +10,7 @@
         header, h1{
             color: teal;
             text-align: center;
-            padding-bottom: 5px;
+            padding-bottom: 15px;
         }
         /* header, h2{
             color: darkcyan;
@@ -134,7 +134,6 @@
         <br>
        <div>
         <input id="result_field" class="bmi_result" type="text" placeholder="Your BMI Result">
-        
        </div>
        <br>
        <div>
@@ -142,9 +141,9 @@
        </div>
        <br>
        <div>
-        <textarea id="advice_field"  name="Medical advice" cols="27" rows="4" placeholder="Medical Advice:"></textarea>
+        <textarea id="advice_field"  name="Medical advice" cols="30" rows="5" placeholder="Medical Advice:"></textarea>
        </div>
-       <br>
+       <br class="your-particular-selector">
         <button id="btn_click" class="compute_btn">Compute</button>
         <button id="clear_btn">Clear</button>
     </section>
@@ -174,3 +173,6 @@
 
 
 <!-- <marquee behavior="scroll" direction="right"  >Here is some scrolling text... left to right!</marquee> -->
+<!-- @media (max-width: 480px) {
+    .your-particular-selector br { content: ' '; }
+} -->

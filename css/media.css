@@ -20,5 +20,11 @@
     font-size: small;   
 }
 
+.your-particular-selector br { 
+    content: ' ';
+ }
+
 
 }
+
+
