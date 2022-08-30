@@ -128,10 +128,10 @@ Meal replacements`
         else if(result == "Extreme Obesity"){
             return `Healthy eating plan and regular physical activity.
 Dietary changes: Cutting calories. The key to weight loss is reducing how many calories you take in. ...
-            Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — contain a lot of calories for a small portion. ...
-            Making healthier choices. ...
-            Restricting certain foods. ...
-            Meal replacements`
+Feeling full on less. Some foods — such as desserts, candies, fats and processed foods — containlot of calories for a small portion. ...
+Making healthier choices. ...
+Restricting certain foods. ...
+Meal replacements`
 
         }
         else{
@@ -159,11 +159,8 @@ Dietary changes: Cutting calories. The key to weight loss is reducing how many c
 
     const adviceResult = medicalAdvice(statusField.value);
     adviceField.value = adviceResult;
-
-
-    // adviceField.value = "";
+  
 })
-
 
 
 // clear all*****************
