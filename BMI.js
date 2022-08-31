@@ -134,7 +134,7 @@ Restricting certain foods. ...
 Meal replacements`
 
         }
-        else{
+        else if (result == "Normal") {
             return `You can maintain Normal Weight with following some diets:
 
 .Emphasizes fruits
@@ -149,6 +149,9 @@ Meal replacements`
 .legumes (beans and peas)
 .soy products, nuts, and seeds.
 .low in added sugars, sodium, saturated fats, trans fats, and cholesterol.`
+        }
+        else {
+            return ("Please fill up all input fields");
         }
 
     }
