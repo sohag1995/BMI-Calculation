@@ -67,8 +67,11 @@ document.getElementById('btn_click').addEventListener('click', function(){
             return "Obesity class-II";
     
         }
-        else{
+        else if(result > 39.9){
             return "Extreme Obesity"
+        }
+        else{
+            return "Give input"
         }
               
     }
